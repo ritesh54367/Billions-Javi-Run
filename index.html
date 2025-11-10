@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Javi Run</title>
+  <meta name="description" content="Endless runner with editable character, obstacles and background." />
+  <link rel="preload" href="assets/character.png" as="image" />
+  <link rel="preload" href="assets/obstacle.png" as="image" />
+  <link rel="preload" href="assets/bg.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="ui">
+    <h1>Javi Run</h1>
+    <div class="controls">
+      <button id="btnStart">Start</button>
+      <button id="btnPause">Pause</button>
+      <button id="btnRestart">Restart</button>
+      <label class="toggle">
+        <input type="checkbox" id="toggleHitboxes" />
+        <span>Show hitboxes</span>
+      </label>
+    </div>
+    <div class="hint">Press <b>Space</b> / tap to jump</div>
+  </div>
+
+  <canvas id="game" width="960" height="540" aria-label="Javi Run game canvas"></canvas>
+
+  <script src="config.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
