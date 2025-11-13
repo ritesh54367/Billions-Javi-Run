@@ -4,10 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Javi Run</title>
-  <meta name="description" content="Endless runner with editable character, obstacles and background." />
-  <link rel="preload" href="assets/character.png" as="image" />
-  <link rel="preload" href="assets/obstacle.png" as="image" />
-  <link rel="preload" href="assets/bg.png" as="image" />
+  <meta name="description" content="Javi Run — blue & white endless runner. Editable assets in /assets and config.js" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,10 +19,11 @@
         <span>Show hitboxes</span>
       </label>
     </div>
-    <div class="hint">Press <b>Space</b> / tap to jump</div>
   </div>
 
-  <canvas id="game" width="960" height="540" aria-label="Javi Run game canvas"></canvas>
+  <canvas id="game" aria-label="Javi Run game canvas"></canvas>
+
+  <div class="hint">Space / Tap to jump — Replace images in <code>/assets</code> and tweak <code>config.js</code></div>
 
   <script src="config.js"></script>
   <script src="game.js"></script>
